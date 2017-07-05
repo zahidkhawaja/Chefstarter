@@ -23,6 +23,7 @@
 		313D69E51F0AFF570060E943 /* ClassicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicView.swift; sourceTree = "<group>"; };
 		313D69E81F0C26C10060E943 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		313D69EA1F0C2CAB0060E943 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		313D69EC1F0D45B00060E943 /* Chefstarter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chefstarter.entitlements; sourceTree = "<group>"; };
 		31BC0CB41F02D9C7004230A1 /* Chefstarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chefstarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BC0CB71F02D9C7004230A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31BC0CB91F02D9C7004230A1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		31BC0CB61F02D9C7004230A1 /* Chefstarter */ = {
 			isa = PBXGroup;
 			children = (
+				313D69EC1F0D45B00060E943 /* Chefstarter.entitlements */,
 				313D69E71F0C269A0060E943 /* Util */,
 				319101231F056F490040D114 /* Model */,
 				319101251F056F5D0040D114 /* Controller */,
@@ -169,6 +171,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6R6P9S3ZUY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -385,6 +392,7 @@
 			baseConfigurationReference = EB9B3BB38FD8DA1A9E0A58D2 /* Pods-Chefstarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Chefstarter/Chefstarter.entitlements;
 				DEVELOPMENT_TEAM = 6R6P9S3ZUY;
 				INFOPLIST_FILE = Chefstarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -399,6 +407,7 @@
 			baseConfigurationReference = E9D4D3D4FAB3467095837219 /* Pods-Chefstarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Chefstarter/Chefstarter.entitlements;
 				DEVELOPMENT_TEAM = 6R6P9S3ZUY;
 				INFOPLIST_FILE = Chefstarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
