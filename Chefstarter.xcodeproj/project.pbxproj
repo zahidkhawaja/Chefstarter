@@ -10,6 +10,13 @@
 		313D69E61F0AFF570060E943 /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D69E51F0AFF570060E943 /* ClassicView.swift */; };
 		313D69E91F0C26C10060E943 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D69E81F0C26C10060E943 /* Constants.swift */; };
 		313D69EB1F0C2CAB0060E943 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D69EA1F0C2CAB0060E943 /* RoundBtn.swift */; };
+		315E41861F0D7F9600782541 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E41851F0D7F9600782541 /* FeedVC.swift */; };
+		315E41871F0DD4A200782541 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31BC0CC31F02D9C7004230A1 /* Info.plist */; };
+		315E418A1F0DD8E500782541 /* Comfortaa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 315E41891F0DD8E500782541 /* Comfortaa.ttf */; };
+		315E418C1F0DDA4E00782541 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 315E418B1F0DDA4E00782541 /* Comfortaa-Bold.ttf */; };
+		315E41901F0EA46100782541 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E418F1F0EA46100782541 /* CircleView.swift */; };
+		315E41921F0ED6DE00782541 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E41911F0ED6DE00782541 /* PostCell.swift */; };
+		315E41951F0FE7F300782541 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E41941F0FE7F300782541 /* DataService.swift */; };
 		31BC0CB81F02D9C7004230A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC0CB71F02D9C7004230A1 /* AppDelegate.swift */; };
 		31BC0CBA1F02D9C7004230A1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC0CB91F02D9C7004230A1 /* SignInVC.swift */; };
 		31BC0CBD1F02D9C7004230A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BC0CBB1F02D9C7004230A1 /* Main.storyboard */; };
@@ -24,6 +31,12 @@
 		313D69E81F0C26C10060E943 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		313D69EA1F0C2CAB0060E943 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		313D69EC1F0D45B00060E943 /* Chefstarter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chefstarter.entitlements; sourceTree = "<group>"; };
+		315E41851F0D7F9600782541 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		315E41891F0DD8E500782541 /* Comfortaa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comfortaa.ttf; sourceTree = "<group>"; };
+		315E418B1F0DDA4E00782541 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		315E418F1F0EA46100782541 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		315E41911F0ED6DE00782541 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		315E41941F0FE7F300782541 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		31BC0CB41F02D9C7004230A1 /* Chefstarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chefstarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BC0CB71F02D9C7004230A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31BC0CB91F02D9C7004230A1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -57,6 +70,24 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		315E41881F0DD8AE00782541 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				315E41891F0DD8E500782541 /* Comfortaa.ttf */,
+				315E418B1F0DDA4E00782541 /* Comfortaa-Bold.ttf */,
+			);
+			name = Fonts;
+			path = Chefstarter;
+			sourceTree = "<group>";
+		};
+		315E41931F0FE7C700782541 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				315E41941F0FE7F300782541 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		319101231F056F490040D114 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +100,8 @@
 			children = (
 				313D69E51F0AFF570060E943 /* ClassicView.swift */,
 				313D69EA1F0C2CAB0060E943 /* RoundBtn.swift */,
+				315E418F1F0EA46100782541 /* CircleView.swift */,
+				315E41911F0ED6DE00782541 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -77,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				31BC0CB91F02D9C7004230A1 /* SignInVC.swift */,
+				315E41851F0D7F9600782541 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -102,6 +136,7 @@
 		31BC0CB61F02D9C7004230A1 /* Chefstarter */ = {
 			isa = PBXGroup;
 			children = (
+				315E41931F0FE7C700782541 /* Services */,
 				313D69EC1F0D45B00060E943 /* Chefstarter.entitlements */,
 				313D69E71F0C269A0060E943 /* Util */,
 				319101231F056F490040D114 /* Model */,
@@ -121,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				454FF14A5892B5051D8A1FFB /* Pods_Chefstarter.framework */,
+				315E41881F0DD8AE00782541 /* Fonts */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,9 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BC0CC21F02D9C7004230A1 /* LaunchScreen.storyboard in Resources */,
+				315E418A1F0DD8E500782541 /* Comfortaa.ttf in Resources */,
 				31BC0CCA1F02DA1F004230A1 /* GoogleService-Info.plist in Resources */,
 				31BC0CBF1F02D9C7004230A1 /* Assets.xcassets in Resources */,
+				315E41871F0DD4A200782541 /* Info.plist in Resources */,
 				31BC0CBD1F02D9C7004230A1 /* Main.storyboard in Resources */,
+				315E418C1F0DDA4E00782541 /* Comfortaa-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315E41951F0FE7F300782541 /* DataService.swift in Sources */,
+				315E41861F0D7F9600782541 /* FeedVC.swift in Sources */,
 				31BC0CBA1F02D9C7004230A1 /* SignInVC.swift in Sources */,
 				313D69EB1F0C2CAB0060E943 /* RoundBtn.swift in Sources */,
 				31BC0CB81F02D9C7004230A1 /* AppDelegate.swift in Sources */,
 				313D69E61F0AFF570060E943 /* ClassicView.swift in Sources */,
+				315E41901F0EA46100782541 /* CircleView.swift in Sources */,
 				313D69E91F0C26C10060E943 /* Constants.swift in Sources */,
+				315E41921F0ED6DE00782541 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
