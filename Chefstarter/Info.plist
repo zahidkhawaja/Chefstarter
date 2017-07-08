@@ -60,6 +60,6 @@
 		<string>fbshareextension</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To create visual assets.</string>
+	<string>To upload visual assets.</string>
 </dict>
 </plist>
