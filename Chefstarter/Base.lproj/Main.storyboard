@@ -186,6 +186,7 @@
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-EX-O5H">
                                         <rect key="frame" x="325" y="22" width="42" height="42"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="42" id="nUE-hK-kIR"/>
                                         </constraints>
@@ -237,6 +238,9 @@
                                                 <state key="normal" title="Post">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="IAo-J8-hkD" eventType="touchUpInside" id="tQr-CL-g6k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -364,6 +368,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.71791309931506841" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="caption" destination="lcy-ev-xIF" id="9iT-2m-XEW"/>
+                                            <outlet property="likeImg" destination="u1F-mH-auS" id="XJs-EM-WaA"/>
                                             <outlet property="likesLabel" destination="aTb-bv-6uD" id="a3C-BR-Hqz"/>
                                             <outlet property="postImg" destination="8a2-Rx-4eX" id="7OC-V7-MBs"/>
                                             <outlet property="profileImg" destination="qio-cV-ZiW" id="P6D-wm-RZ4"/>
@@ -389,6 +394,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="fKt-PU-Ohk" id="7lW-4W-Y3s"/>
                         <outlet property="imageAdd" destination="7c2-E9-n2V" id="OHq-jO-6Uy"/>
                         <outlet property="tableView" destination="jBq-gI-gdN" id="497-sq-S9u"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="DGn-NC-71l"/>
