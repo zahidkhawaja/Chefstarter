@@ -67,10 +67,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nEC-yx-ucY">
-                                <rect key="frame" x="46" y="288" width="283" height="131"/>
+                                <rect key="frame" x="46" y="288" width="283" height="132"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-ce-cE8">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="131"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="132"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-rQ-g0P">
                                                 <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -85,7 +85,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWH-Pb-VHs" customClass="RoundBtn" customModule="Chefstarter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="100" width="283" height="31"/>
+                                                <rect key="frame" x="0.0" y="100" width="283" height="32"/>
                                                 <color key="backgroundColor" red="0.85882352941176465" green="0.12941176470588234" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                                 <state key="normal" title="Sign In">
@@ -335,9 +335,13 @@
                                                                 <constraint firstItem="8a2-Rx-4eX" firstAttribute="top" secondItem="9H2-JH-NqX" secondAttribute="bottom" constant="8" id="5rh-gp-E3Y"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVW-KY-NpP" customClass="RoundBtn" customModule="Chefstarter" customModuleProvider="target">
-                                                            <rect key="frame" x="115" y="254" width="113" height="30"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVW-KY-NpP" customClass="RoundBtn" customModule="Chefstarter" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="253" width="63" height="30"/>
                                                             <color key="backgroundColor" red="0.85882352941176465" green="0.12941176470588234" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="jSe-ew-AsH"/>
+                                                                <constraint firstAttribute="width" constant="63" id="mAg-hh-yDE"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                                             <state key="normal" title="Try It!">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -346,15 +350,14 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="centerY" secondItem="b6a-Vg-otF" secondAttribute="centerY" id="1pg-g8-g1R"/>
+                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="leading" secondItem="Tqt-G4-9Mv" secondAttribute="leading" id="55B-IW-9Zb"/>
                                                         <constraint firstItem="Tqt-G4-9Mv" firstAttribute="trailing" secondItem="bE1-8j-aTR" secondAttribute="trailingMargin" id="Cuw-HW-Qlt"/>
                                                         <constraint firstItem="Tqt-G4-9Mv" firstAttribute="top" secondItem="bE1-8j-aTR" secondAttribute="topMargin" id="D18-H2-YUK"/>
                                                         <constraint firstItem="b6a-Vg-otF" firstAttribute="trailing" secondItem="Tqt-G4-9Mv" secondAttribute="trailing" id="IVr-X4-58T"/>
                                                         <constraint firstItem="b6a-Vg-otF" firstAttribute="bottom" secondItem="bE1-8j-aTR" secondAttribute="bottomMargin" id="LN3-93-ySs"/>
-                                                        <constraint firstItem="b6a-Vg-otF" firstAttribute="leading" secondItem="xVW-KY-NpP" secondAttribute="trailing" constant="21" id="N8g-QH-2LZ"/>
+                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="top" secondItem="Tqt-G4-9Mv" secondAttribute="bottom" constant="5" id="cU8-0t-7NU"/>
                                                         <constraint firstItem="b6a-Vg-otF" firstAttribute="top" secondItem="Tqt-G4-9Mv" secondAttribute="bottom" constant="11" id="e7Q-Qo-J2k"/>
-                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="top" secondItem="Tqt-G4-9Mv" secondAttribute="bottom" constant="5" id="fQp-gb-4QG"/>
-                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="centerY" secondItem="b6a-Vg-otF" secondAttribute="centerY" id="fw9-SJ-NFK"/>
-                                                        <constraint firstItem="xVW-KY-NpP" firstAttribute="centerX" secondItem="Tqt-G4-9Mv" secondAttribute="centerX" id="r8J-Cu-HKB"/>
                                                         <constraint firstItem="Tqt-G4-9Mv" firstAttribute="leading" secondItem="bE1-8j-aTR" secondAttribute="leadingMargin" id="wxl-Tm-eto"/>
                                                     </constraints>
                                                 </view>
